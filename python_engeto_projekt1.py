@@ -45,7 +45,7 @@ separator = 40*"-"
  
 if user in users and users[user] == password:
     print(separator)
-    print(f"Welcome to the app, {user}\nWe have 3 texts to be analyzed.")
+    print(f"Welcome to the app, {user}\nWe have {len(TEXTS)} texts to be analyzed.")
     print(separator)
 else:
     print(f"username:{user}\npassword:{password}")
@@ -53,10 +53,10 @@ else:
     quit()
 
 #Choosing text
-part = input("Enter a number btw. 1 and 3 to select:\n")
+part = input(f"Enter a number btw. 1 and {len(TEXTS)} to select:\n")
 if part.isdigit():
     part = int(part)
-    if part >= 1 and int(part) <= 3:
+    if part >= 1 and part <= 3:
         pass
     else:
         print("No available!!Terminating the program...")
@@ -65,7 +65,6 @@ else:
     print("No available!!Terminating the program...")
     quit()
 print(separator)
-part = int(part)
 lst_words = TEXTS[part-1].split()
 
 #Total words
