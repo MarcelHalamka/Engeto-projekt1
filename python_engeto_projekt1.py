@@ -124,7 +124,8 @@ nr = "NR."
 print(f"{my_len.rjust(2)}|{(occurance).center(18)}|{nr}", sep="\n")
 print(separator)
 for index, number in enumerate(sorted(sorted_numbers), 1):
-    print(f"{(str(index)).rjust(3)}|{(occur_list[number] * star).ljust(18)}|{occur_list[number]}", sep="\n")
+    print(f"{(str(index)).rjust(3)}|{(occur_list[number] * star).ljust(18)}\
+        |{occur_list[number]}", sep="\n")
 
  
 
