@@ -90,7 +90,7 @@ total_lower = 0
 for word in lst_words:
     if word.islower():
         total_lower += 1
-print(f"There are {total_lower} uppercase words.")
+print(f"There are {total_lower} lowercase words.")
 
 #Total numeric
 total_numeric = 0
@@ -124,8 +124,8 @@ nr = "NR."
 print(f"{my_len.rjust(2)}|{(occurance).center(18)}|{nr}", sep="\n")
 print(separator)
 for index, number in enumerate(sorted(sorted_numbers), 1):
-    print(f"{(str(index)).rjust(3)}|{(occur_list[number] * star).ljust(18)}\
-        |{occur_list[number]}", sep="\n")
+    print(f"{(str(index)).rjust(3)}|{(occur_list[number] * star).ljust(18)}|\
+{occur_list[number]}", sep="\n")
 
  
 
